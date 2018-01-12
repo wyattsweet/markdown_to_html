@@ -1,6 +1,9 @@
 ---
-title: My Test post
-date: January 9, 2017
+{
+  "title": "My Test post",
+  "date": "January 9, 2017",
+  "tags": ["javaScript", "Web Development", "Performance"]
+}
 ---
 
 # My Groovy Markdown File

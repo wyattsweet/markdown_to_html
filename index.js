@@ -13,13 +13,8 @@ fs.readFile(
     // * means 0 or more occurances of the preceding item
     const regMatch = data.match(/---[\s\S]*---/);
     // g flag in regex replaces all occurances
-    let subStr = regMatch[0].replace(/---\n|\n---/g, '');
-    subStr = subStr.replace(/\n/, ',');
-    const arr = subStr.split(',');
-    const obj = {
-      title: arr[0].replace(/title: /, ''),
-      date: arr[1].replace(/date: /, ''),
-    };
+    const jsonStr = regMatch[0].replace(/---\n|\n---/g, '');
+    const metaData = JSON.parse(jsonStr);
     // TODO: remove meta data section from markdown before passing to remark
 
     //    remark()
