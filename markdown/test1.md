@@ -5,7 +5,6 @@
   "tags": ["javaScript", "Web Development", "Performance"]
 }
 ---
-
 # My Groovy Markdown File
 
 ## By: Wyatt Sweet
